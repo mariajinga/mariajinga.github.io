@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Maria Jinga</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/style.css" rel="stylesheet">
+      <style>
+         .reduced-margin {
+            margin-top: -250px;
+            margin-bottom: -150px;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+               <span class="logo" style="font-family: 'YourH2Font', sans-serif; font-size: 24px; color: #000; font-weight: 500; letter-spacing: 7px;">MARIA JINGA</span>
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About Me</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section id="portfolio">
+         <section id="description" class="reduced-margin">
+            <div class="container">
+               <h2>About My Portfolio</h2>
+               <p id="portfolio-description">My portfolio showcases a curated selection of videos and photographs that embody my artistic vision and style. Each piece has been thoughtfully chosen to highlight key moments and themes from my creative journey. It reflects my multifaceted career as a screenwriter, director, editor, actor, student, content creator, programmer and event coordinator. Together, these works tell the story of my dedication to creativity, innovation and collaboration.</p>
+            </div>
+         </section>
+         <div class="container">
+            <ul class="portfolio-sorting list-inline text-center">
+               <li><a href="#" data-group="all" class="active" onclick="changeDescription('all')">All</a></li>
+               <li><a href="#" data-group="videos" onclick="changeDescription('videos')">Videos</a></li>
+               <li><a href="#" data-group="photos" onclick="changeDescription('photos')">Photos</a></li>
+               <li><a href="#" data-group="experience" onclick="changeDescription('experience')">Experience</a></li>
+            </ul>
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+                     <ul class="portfolio-items list-unstyled" id="grid">
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["videos"]'>
+                           <a href="#" onclick="openFullscreen(this); return false;">
+                              <div class="background-image-holder">
+                                 <video class="background-image" controls poster="img/preview1.png">
+                                    <source src="img/portfolio42.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           </a>
+                        </li>
+                        <!-- ... photos ... -->
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio3.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio3.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio2.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio2.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio4.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio4.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio5.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio5.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio1.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio1.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio6.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio6.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio7.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio7.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio8.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio8.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio9.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio9.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio10.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio10.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio11.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio11.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio12.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio12.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio13.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio13.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio14.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio14.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio15.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio15.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio16.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio16.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio17.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio17.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio18.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio18.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio19.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio19.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio20.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio20.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio21.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio21.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio22.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio22.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio23.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio23.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio24.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio24.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio25.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio25.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio26.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio26.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["photos"]'>
+                           <a href="img/portfolio27.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio27.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <!-- ... experience ... -->
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio28.jpeg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio28.jpeg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio29.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio29.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio30.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio30.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio31.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio31.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio32.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio32.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio33.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio33.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio34.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio34.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio35.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio35.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio36.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio36.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio37.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio37.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio38.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio38.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio39.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio39.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio40.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio40.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio41.png" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio41.png" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio44.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio44.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["experience"]'>
+                           <a href="img/portfolio45.jpg" data-lightbox="true">
+                              <div class="background-image-holder">
+                                 <img alt="portfolio" class="background-image" src="img/portfolio45.jpg" />
+                              </div>
+                           </a>
+                        </li>
+                        <!-- ... videos ... -->
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["videos"]'>
+                           <a href="#" onclick="openFullscreen(this); return false;">
+                              <div class="background-image-holder">
+                                 <video class="background-image" controls poster="img/preview2.png">
+                                    <source src="img/portfolio43.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- script -->
+      <script>
+         function changeDescription(category) {
+            const description = document.getElementById('portfolio-description');
+            switch (category) {
+               case 'all':
+                  description.innerText = "My portfolio showcases a curated selection of videos and photographs that embody my artistic vision and style. Each piece has been thoughtfully chosen to highlight key moments and themes from my creative journey. It reflects my multifaceted career as a screenwriter, director, editor, actor, student, content creator, programmer and event coordinator. Together, these works tell the story of my dedication to creativity, innovation and collaboration.";
+                  break;
+               case 'videos':
+                  description.innerText = 'The videos in my portfolio offer a snapshot of my career over time, showcasing key highlights and milestones. They particularly emphasize my work on one of my most recent projects, a short film that I wrote, directed and edited, titled "Dă mai tare!" in Romanian, or "Hit it!" in English.';
+                  const lightboxImages = document.querySelectorAll('.lightbox .lb-image');
+                  lightboxImages.forEach(image => {
+                        image.style.width = 'auto'; 
+                        image.style.maxHeight = '80vh';
+                  });
+                  break;
+               case 'photos':
+                  description.innerText = "The photos in my portfolio reflect my journey as an actress, a career I have passionately pursued since 2014. Through acting, I have developed confidence, creativity and the ability to express myself authentically. It has taught me the art of communication, adaptability, and the value of connecting with people on a deeper level. These experiences have shaped not only my craft but also my personal growth, making acting an integral part of who I am.";
+                  break;
+               case 'experience':
+                  description.innerText = 'This section highlights my professional experiences and the projects I’ve worked on, showcasing my skills and accomplishments. I’ve included my bachelor’s degree project, as it reflects my passion for skincare. I dedicated myself to developing a mobile application designed to help users create and manage a personalized skincare routine. This project earned the highest grade and I aim to launch it in the near future. Additionally, I’ve featured my Pinterest statistics, showcasing my engagement with the platform, driven by my appreciation for aesthetics. The portfolio also includes my early magazine appearances, as well as my nominations at international film festivals for my short film, "Hit it!"';
+                  break;
+            }
+         }
+
+         // document.querySelectorAll('a[data-lightbox="video"]').forEach(link => {
+         //    link.addEventListener('click', function(event) {
+         //       event.preventDefault();
+         //       const videoSrc = this.getAttribute('href'); // Obține sursa videoclipului din link
+         //       const lightbox = document.querySelector('.lightbox');
+         //       lightbox.innerHTML = `
+         //             <div class="lightbox-content">
+         //                <button class="close-lightbox" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 24px; cursor: pointer;">&times;</button>
+         //                <video id="lightbox-video" controls style="max-width: 90%; max-height: 80vh; width: auto; height: auto;">
+         //                   <source src="${videoSrc}" type="video/mp4">
+         //                   Your browser does not support the video tag.
+         //                </video>
+         //             </div>
+         //       `;
+         //       lightbox.style.display = 'block'; // Afișează lightbox-ul
+
+         //       // Adaugă eveniment pentru butonul de închidere
+         //       document.querySelector('.close-lightbox').addEventListener('click', function() {
+         //             const video = document.getElementById('lightbox-video');
+                     
+         //             if (video) {
+         //                video.pause(); // Oprește videoclipul
+         //                video.currentTime = 0; // Resetează timpul videoclipului la început
+         //             }                
+         //             lightbox.innerHTML = " "; // Ascunde lightbox-ul
+         //       });
+         //    });
+         // });
+
+         // // Adaugă un eveniment pentru a închide lightbox-ul și a opri videoclipul
+         // document.querySelector('.lightbox').addEventListener('click', function(event) {
+         //    const video = document.getElementById('lightbox-video');
+         //    if (video) {
+         //        video.pause(); // Oprește videoclipul
+         //        video.currentTime = 0; // Resetează timpul videoclipului la început
+         //    }
+         //    this.style.display = 'none'; // Ascunde lightbox-ul
+         // });
+
+         function openFullscreen(element) {
+            const video = element.querySelector('video');
+            if (video) {
+               if (video.requestFullscreen) {
+                     video.requestFullscreen(); 
+               } else if (video.mozRequestFullScreen) { 
+                     video.mozRequestFullScreen();
+               } else if (video.webkitRequestFullscreen) { 
+                     video.webkitRequestFullscreen();
+               } else if (video.msRequestFullscreen) { 
+                     video.msRequestFullscreen();
+               }
+               video.play(); 
+            }
+         }
+
+         document.addEventListener('fullscreenchange', function() {
+            const video = document.querySelector('video');
+            if (document.fullscreenElement === null) {
+               video.pause();
+            }
+         });
+      </script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/lightbox-plus-jquery.js"></script>
+      <script src="js/jquery.shuffle.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
